@@ -1,11 +1,11 @@
 :root{
-    --cor-de-fundo:#140332;
-    --azul:#2485c2;
-    --branco:#ffffff;
-    --botao-ativo: #ffffff;
-    --botao-inativo:#0c0945;
-    --texto-fundo: #ffffff;
-    --fonte: 'Embed Code';
+    --cor-de-fundo:#1E1E1E;   
+    --azul:#317dc4; 
+    --branco:#ffffff; 
+    --botao-ativo: #261c56; 
+    --botao-inativo:#100c24;  
+    --texto-fundo:#100c24; 
+    --fonte: 'Cascadia Code'; 
 }
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{

@@ -11,3 +11,4 @@ for (let i=0; i < botoes.length; i++){
     }
 }
 const contadores = document.querySelectorAll("contador");
+const tempoObjetivo = new Date ("2035-01-01T00:00:00");
