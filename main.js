@@ -11,4 +11,20 @@ for (let i=0; i < botoes.length; i++){
     }
 }
 const contadores = document.querySelectorAll("contador");
-const tempoObjetivo = new Date ("2035-01-01T00:00:00");
+const tempoObjetivo1 = new Date ("2035-01-01T00:00:00");
+const tempoobjetivo2 = new Date ("2031-03-21T19:00:00");
+const tempoObjetivo3 = new Date ("2031-04-26T00:00:00");
+const tempoObjetivo4 = new Date ("2026-01-01T00:00:00");
+const tempos = [tempoObjetivo1, tempoobjetivo2, tempoObjetivo3, tempoObjetivo4];
+function atualizaCronometro (){
+    for (let i = 0; i < contadores.length; i++){
+        document.getElementById("dias"+i).textContent = calculaTempo(tempos [i])[0];
+        document.getElementById("horas"+i).textContent = calculaTempo(tempos [i])[1];
+        document.getElementById("min"+i).textContent = calculaTempo(tempos [i])[2];
+        document.getElementById("seg"+i).textContent = calculaTempo(tempos [i])[3];
+    }
+    for (let i = 0; i < contadores.length; i++){
+        //contadores[i].textContent = calculaTempo (tempos [i]);
+    }
+}
+
