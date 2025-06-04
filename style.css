@@ -102,5 +102,5 @@ body{
 .contador-digito-texto{
     color: var(--azul);
     font-size: 20px;
-    margin: o;
+    margin: 0;
 }
