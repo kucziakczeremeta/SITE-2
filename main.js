@@ -11,17 +11,17 @@ for (let i=0; i < botoes.length; i++){
     }
 }
 const contadores = document.querySelectorAll(".contador");
-const TempoObjetivo1 = new Date ("2035-01-01T00:00:00");
-const Tempoobjetivo2 = new Date ("2031-03-21T19:00:00");
-const TempoObjetivo3 = new Date ("2031-04-26T00:00:00");
-const TempoObjetivo4 = new Date ("2026-01-01T06:00:00");
-const Tempos = [TempoObjetivo1, Tempoobjetivo2, TempoObjetivo3, TempoObjetivo4];
+const tempoObjetivo1 = new Date ("2035-01-01T00:00:00");
+const tempoobjetivo2 = new Date ("2031-03-21T19:00:00");
+const tempoObjetivo3 = new Date ("2031-04-26T00:00:00");
+const tempoObjetivo4 = new Date ("2026-01-01T06:00:00");
+const tempos= [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 function atualizaCronometro (){
     for (let i = 0; i < contadores.length; i++){
-        document.getElementById("dias"+i).textContent = calculaTempo(Tempos [i])[0];
-        document.getElementById("horas"+i).textContent = calculaTempo(Tempos [i])[1];
-        document.getElementById("min"+i).textContent = calculaTempo(Tempos [i])[2];
-        document.getElementById("seg"+i).textContent = calculaTempo(Tempos [i])[3];
+        document.getElementById("dias"+i).textContent = calculaTempo(tempos [i])[0];
+        document.getElementById("horas"+i).textContent = calculaTempo(tempos [i])[1];
+        document.getElementById("min"+i).textContent = calculaTempo(tempos [i])[2];
+        document.getElementById("seg"+i).textContent = calculaTempo(tempos [i])[3];
     }
     for (let i = 0; i < contadores.length; i++){
         //contadores[i].textContent = calculaTempo (tempos [i]);
@@ -32,9 +32,9 @@ function comecaCronometro (){
     setInterval (atualizaCronometro, 1000);
 }
 comecaCronometro();
-function calculaTempo (Tempoobjetivo){
+function calculaTempo (tempoobjetivo){
     let tempoAtual = new Date ();
-    let tempoFinal = TempoObjetivo - tempoAtual;
+    let tempoFinal = tempoObjetivo - tempoAtual;
     let segundos = Math.floor(tempoFinal/1000);
     let minutos = Math.floot(segundos/60); 
     let horas = Math.floor(minutos/60);
