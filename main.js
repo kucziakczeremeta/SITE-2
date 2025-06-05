@@ -15,7 +15,7 @@ const TempoObjetivo1 = new Date ("2035-01-01T00:00:00");
 const Tempoobjetivo2 = new Date ("2031-03-21T19:00:00");
 const TempoObjetivo3 = new Date ("2031-04-26T00:00:00");
 const TempoObjetivo4 = new Date ("2026-01-01T06:00:00");
-const tempos = [TempoObjetivo1, Tempoobjetivo2, TempoObjetivo3, TempoObjetivo4];
+const Tempos = [TempoObjetivo1, Tempoobjetivo2, TempoObjetivo3, TempoObjetivo4];
 function atualizaCronometro (){
     for (let i = 0; i < contadores.length; i++){
         document.getElementById("dias"+i).textContent = calculaTempo(tempos [i])[0];
