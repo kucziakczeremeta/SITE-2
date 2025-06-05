@@ -34,7 +34,7 @@ function comecaCronometro (){
 comecaCronometro();
 function calculaTempo (tempoobjetivo){
     let tempoAtual = new Date ();
-    let tempoFinal = tempoObjetivo - tempoAtual;
+    let tempoFinal = TempoObjetivo - tempoAtual;
     let segundos = Math.floor(tempoFinal/1000);
     let minutos = Math.floot(segundos/60); 
     let horas = Math.floor(minutos/60);
